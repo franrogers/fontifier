@@ -99,3 +99,29 @@ function update() {
     outElement.innerText = output;
   }
 }
+
+function getArgument(key) {
+  var pairs = window.location.search.substring(1).split('&');
+
+  for (var i = 0; i < pairs.length; i++) {
+    pair = pairs[i].split('=');
+
+    if (pair[0] == key)
+      return pair[1];
+  }
+
+  return null;
+}
+
+function initialize() {
+  var inArg = getArgument("in");
+  if (inArg != null)
+    document.forms[0].elements[0].value = getArgument("in");
+  
+  var fontArg = getArgument("font");
+  if (inArg != null)
+    document.forms[0].elements[1].value = getArgument("font");
+  
+  document.forms[0].elements[2].checked = getArgument("bold") == "1";
+  setTimeout('update()', 50);
+}
