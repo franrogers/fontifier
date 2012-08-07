@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+<title>Fran's Magical Unicode Fontifier</title>
+
+<link rel="stylesheet" type="text/css" href="unicode.css">
+<script type="text/javascript" charset="utf-8" src="unicode.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16904142-2']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+
+<body onLoad="setTimeout('update()', 50)">
+
+<form name="fontifier">
+
+<input name="in" type="text" onChange="update()" onKeyUp="update()" onKeyPress="update()">
+
+<br><br>
+
+<select name="font" onChange="update()">
+<option value="plain">plain</option>
+<option value="italic">𝑖𝑡𝑎𝑙𝑖𝑐</option>
+<option value="script">𝒮𝒸𝓇𝒾𝓅𝓉</option>
+<option value="fraktur">𝔉𝔯𝔞𝔨𝔱𝔲𝔯</option>
+<option value="double">𝕕𝕠𝕦𝕓𝕝𝕖-𝕤𝕥𝕣𝕦𝕔𝕜</option>
+<option value="sans">𝗌𝖺𝗇𝗌-𝗌𝖾𝗋𝗂𝖿</option>
+<option value="oblique">𝘰𝘣𝘭𝘪𝘲𝘶𝘦</option>
+<option value="monospace">𝚖𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎𝚍</option>
+<option value="small-caps">Sᴍᴀʟʟ Cᴀᴘꜱ</option>
+<option value="subway">ⓈⓊⒷⓌⒶⓎ</option>
+<option value="braille">⠃⠗⠁⠊⠇⠇⠑</option>
+</select>
+
+<input type="checkbox" name="bold" onChange="update()"><span id="bold-text">bold</span>
+
+<br><br>
+
+<span id="out">&nbsp;</span>
+</form>
+
+</body>
+</html>
