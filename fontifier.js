@@ -90,7 +90,7 @@ function update() {
   
   var output = convertFont('plain', font + (bold ? "-bold" : ""), input);
   
-  output = output != "" ? output : " ";
+  output = output != "" ? output : "\xA0";
   
   var outElement = document.getElementById("out");
   if (outElement.textContent) {

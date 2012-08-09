@@ -11,12 +11,14 @@
 
 <body onLoad="initialize()">
 
+<div class="fontifier-container">
+<div class="fontifier-top">
 <form name="fontifier">
+<div class="fontifier-top-section">
+<input name="in" id="in" type="text" onChange="update()" onKeyUp="update()" onKeyPress="update()">
+</div>
 
-<input name="in" type="text" onChange="update()" onKeyUp="update()" onKeyPress="update()">
-
-<br><br>
-
+<div class="fontifier-top-section">
 <select name="font" onChange="update()">
 <option value="plain">plain</option>
 <option value="italic">𝑖𝑡𝑎𝑙𝑖𝑐</option>
@@ -32,11 +34,20 @@
 </select>
 
 <input type="checkbox" name="bold" onChange="update()"><span id="bold-text">bold</span>
-
-<br><br>
-
-<span id="out">&nbsp;</span>
+</div>
 </form>
+</div>
+
+<div class="fontifier-bottom">
+<div class="fontifier-bottom-section">
+<span id="out">&nbsp;</span>
+</div>
+</div>
+</div>
+
+<div class="corner">
+<a href="https://github.com/frmccrory/fontifier">fork me on github</a>
+</div>
 
 </body>
 </html>

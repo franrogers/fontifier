@@ -1,8 +1,65 @@
 body {
   margin: 10em;
+}
+
+.fontifier-container {
+  margin: 0px auto;
   text-align: center;
+}
+
+.fontifier-top {
+  margin: 0px auto;
+  background-color: #ddd;
+  padding-top: 1em;
+  width: 20em;
+  text-align: center;
+  
+  -moz-border-radius-topleft: 1em;
+  border-top-left-radius: 1em;
+  -moz-border-radius-topright: 1em;
+  border-top-right-radius: 1em;
+}
+
+.fontifier-top-section {
+  padding-bottom: 0.5em;
+}
+
+input#in {
+  width: 19em;
+}
+
+.fontifier-bottom {
+  margin: 0px auto;
+  text-align: center;
+  min-width: 25em;
+  display: inline-block;
+  
+  border: solid 1em #ddd;
+  
+  -moz-border-radius: 1em;
+  border-radius: 1em;
 }
 
 span#out {
   font-size: 3em;
+  text-align: center;
+}
+
+.corner {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  text-decoration: none;
+}
+.corner a:link {
+  text-decoration:none;
+}
+.corner a:visited {
+  text-decoration:none;
+}
+.corner a:hover {
+  text-decoration:underline;
+}
+.corner a:active {
+  text-decoration:underline;
 }
