@@ -115,11 +115,11 @@ function getArgument(key) {
 
 function initialize() {
   var inArg = getArgument("in");
-  if (inArg != null)
+  if (inArg)
     document.forms[0].elements[0].value = getArgument("in");
   
   var fontArg = getArgument("font");
-  if (inArg != null)
+  if (fontArg)
     document.forms[0].elements[1].value = getArgument("font");
   
   document.forms[0].elements[2].checked = getArgument("bold") == "1";
