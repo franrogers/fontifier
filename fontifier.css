@@ -44,22 +44,3 @@ span#out {
   font-size: 3em;
   text-align: center;
 }
-
-.corner {
-  position: fixed;
-  right: 1em;
-  bottom: 1em;
-  text-decoration: none;
-}
-.corner a:link {
-  text-decoration:none;
-}
-.corner a:visited {
-  text-decoration:none;
-}
-.corner a:hover {
-  text-decoration:underline;
-}
-.corner a:active {
-  text-decoration:underline;
-}
