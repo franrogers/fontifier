@@ -17,7 +17,7 @@ MS is rather lacking). Good pan-Unicode FOSS fonts include the
 
 License
 -------
-    Copyright (c) 2011-12, Fran McCrory
+    Copyright (c) 2011-12, Fran Rogers
     All rights reserved.
     
     Redistribution and use in source and binary forms, with or without
