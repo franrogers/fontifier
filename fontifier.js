@@ -73,8 +73,9 @@ function convertFont(from, to, text) {
 
 function update() {
   var input = document.forms[0].elements[0].value;
-  var font  = document.forms[0].elements[1].value;
-  var bold  = document.forms[0].elements[2].checked;
+  var font = document.forms[0].elements[1].value;
+  var bold = document.forms[0].elements[2].checked;
+  var strikethrough = document.forms[0].elements[3].checked;
   
   if (fonts[font + "-bold"] == undefined) {
     bold = document.forms[0].elements[2].checked = false;
@@ -90,6 +91,14 @@ function update() {
   }
   
   var output = convertFont('plain', font + (bold ? "-bold" : ""), input);
+
+  if (strikethrough) {
+    var oldOutput = output;
+    output = "";
+    for (var i = 0; i < oldOutput.length; i++) {
+      output += fixedCharAt(oldOutput, i) + '\u0336';
+    }
+  }
   
   output = output != "" ? output : "\xA0";
   
