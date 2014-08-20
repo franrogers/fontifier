@@ -10,7 +10,7 @@ today!
 Try it live at <http://fontifier.dumetella.net/>.
 
 (If any of these characters show up as
-[tofu]<https://en.wiktionary.org/wiki/tofu#Noun> in your
+[tofu](https://en.wiktionary.org/wiki/tofu#Noun) in your
 browser/editor/&c., you probably don't have a pan-Unicode font
 installed (the famous Arial Unicode MS is rather lacking). Good
 pan-Unicode FOSS fonts include the [DejaVu font
